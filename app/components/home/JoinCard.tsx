@@ -289,7 +289,9 @@ export default function JoinCard() {
                                         >
                                             Apply Now
                                         </Link>
-                                        <Link
+
+                                        {/* Wait Community PRofile */}
+                                        {/* <Link
                                             to="/information-pack"
                                             className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-center text-sm sm:text-base
                                                 bg-gray-50 dark:bg-gray-700/50
@@ -298,7 +300,7 @@ export default function JoinCard() {
                                                 transition-all duration-300"
                                         >
                                             Download Information Pack
-                                        </Link>
+                                        </Link> */}
                                     </nav>
 
                                     <footer className="pt-6 border-t border-gray-200/50 dark:border-gray-700/30">
