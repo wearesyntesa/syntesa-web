@@ -62,7 +62,7 @@ export default function OpenStreetMap() {
 
             const popupContent = `
                 <div class="custom-popup">
-                    <h3>Software Development Lab</h3>
+                    <h3>Software Engineering Lab</h3>
                     <p>A10 Building, 3rd Floor</p>
                     <p>Universitas Negeri Surabaya</p>
                 </div>

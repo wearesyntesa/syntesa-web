@@ -70,7 +70,7 @@ export default function Footer({ socialLinks }: FooterProps) {
                                     <div className="flex items-start space-x-3">
                                         <IoLocationSharp className="w-5 h-5 mt-1 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300" />
                                         <div className="flex-1">
-                                            <p className="font-medium text-gray-900 dark:text-white">Software Development Lab</p>
+                                            <p className="font-medium text-gray-900 dark:text-white">Software Engineering Lab</p>
                                             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                                                 Universitas Negeri Surabaya<br />
                                                 A10 Building, 3rd Floor, Room 3 & 4<br />
@@ -117,7 +117,7 @@ export default function Footer({ socialLinks }: FooterProps) {
                 {/* Copyright */}
                 <div className="mt-12 pt-8 border-t border-gray-200/10 dark:border-gray-800/50">
                     <p className="text-sm text-center text-gray-500 dark:text-gray-400">
-                        © {new Date().getFullYear()} Software Development Lab UNESA. All rights reserved.
+                        © {new Date().getFullYear()} Software Engineering Lab UNESA. All rights reserved.
                     </p>
                 </div>
             </div>

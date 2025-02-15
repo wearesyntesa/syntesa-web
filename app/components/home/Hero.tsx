@@ -75,7 +75,7 @@ export default function Hero() {
                         <header className="space-y-4">
                             <h1 id="hero-heading" className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 dark:text-white tracking-tight">
                                 <span className="inline-block mb-2" style={{ animationDelay: '200ms' }}>
-                                    Software Development
+                                    Software Engineering
                                 </span>
                                 <br />
                                 <span className="inline-block relative" style={{ animationDelay: '400ms' }}>
@@ -85,7 +85,7 @@ export default function Hero() {
                             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300
                                 max-w-3xl mx-auto font-light px-4 sm:px-0"
                                 style={{ animationDelay: '600ms' }}>
-                                Where innovation meets excellence in software development, fostering the next generation of tech leaders
+                                Where innovation meets excellence in software engineering, fostering the next generation of tech leaders
                             </p>
                         </header>
 
