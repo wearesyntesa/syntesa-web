@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Layout from "~/components/Layout";
 import { Link } from "@remix-run/react";
-import InputText from "~/components/form/input";
-import DropDown from "~/components/form/dropDown";
-import FileUploader from "~/components/form/fileUploader";
+import InputText from "~/components/form/Input";
+import DropDown from "~/components/form/DropDown";
+import FileUploader from "~/components/form/FileUploader";
 
 export default function Programs() {
 
