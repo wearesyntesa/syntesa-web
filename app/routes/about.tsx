@@ -6,7 +6,7 @@ export default function About() {
     return (
         <Layout>
             <div className="min-h-[70vh] pt-20 bg-gradient-to-br from-gray-50/80 via-white to-gray-50/80
-                dark:from-black dark:via-gray-900 dark:to-black ">
+                dark:from-black dark:via-gray-900 dark:to-black pb-24">
                 <div className="max-w-6xl mx-auto px-6">
                     {/* <h1 className="text-4xl font-bold text-gray-900 dark:text-white">About</h1> */}
 
@@ -27,10 +27,7 @@ export default function About() {
                         </div>
                     </article>
 
-                    <div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">Laboratory Assistant</h2>
-                        <Members members={members}/>
-                    </div>
+                    <Members members={members}/>
                 </div>
             </div>
         </Layout>

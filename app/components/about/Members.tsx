@@ -14,8 +14,9 @@ interface MembersProps {
 
 export default function Members({ members }: MembersProps) {
     return (
-        <div>
-            <div className="grid grid-cols-1 gap-8 mt-4 pb-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="py-16 sm:py-24">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-8">Laboratory Assistant</h2>
+            <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 lg:grid-cols-3">
                 {members.map((member) => (
                     <div key={member.name} className="flex sm:flex-col-reverse flex-row items-center gap-2 bg-white dark:bg-gray-800 dark:bg-opacity-25 border border-gray-300 dark:border-gray-800 rounded-xl shadow-sm">
                         <div className="sm:py-2 px-2 flex sm:flex-row flex-col sm:w-full h-full sm:border border 

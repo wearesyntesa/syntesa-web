@@ -80,7 +80,7 @@ export default function Programs() {
     return (
         <Layout>
             <div className="min-h-[70vh] pt-20 bg-gradient-to-br from-gray-50/80 via-white to-gray-50/80
-                dark:from-black dark:via-gray-900 dark:to-black">
+                dark:from-black dark:via-gray-900 dark:to-black pb-24">
                 { isSubmitted ? (
                     <div className="h-[70vh] max-w-6xl mx-auto p-6 flex flex-col justify-center items-center" role="alert">
                         <p className="font-bold">Application submitted!</p>
