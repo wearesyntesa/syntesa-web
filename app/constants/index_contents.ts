@@ -128,3 +128,90 @@ export const partnerships: TypePartner[] = [
         category: "Technology"
     }
 ];
+
+export const members = [
+    {
+        name: "Muhammad Istiqlal",
+        role: "Cloud Engineer",
+        urlImg: "/avatars/istiqlal.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Yunus Dhanzky Handitra",
+        role: "Software Engineer",
+        urlImg: "/avatars/yunus.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Ahmd Mufahras Li Alfazh Assardew",
+        role: "Software Engineer",
+        urlImg: "/avatars/mufahras.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Helmy Luqmanulhakim",
+        role: "Data Science",
+        urlImg: "/avatars/helmy.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Naufal Farras Pratama",
+        role: "Data Science",
+        urlImg: "/avatars/naufal.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Dyan Dananjaya Tejo Pamungkas",
+        role: "Software Engineer",
+        urlImg: "/avatars/dyan.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Vincent Louis Fernando",
+        role: "Software Engineer",
+        urlImg: "/avatars/vincent.jpg",
+        class: "2022",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Rayhan Ramadhani Hendra Atmadja",
+        role: "Software Engineer",
+        urlImg: "/avatars/rayhan.jpg",
+        class: "2023",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Cornelius Louis Nathan",
+        role: "Software Engineer",
+        urlImg: "/avatars/nathan.jpg",
+        class: "2023",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Muhammad Raffi Akhdilputra",
+        role: "Data Science",
+        urlImg: "/avatars/raffi.jpg",
+        class: "2023",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Muhammad Nur Azhar Dhiyaulhaq",
+        role: "Cloud Engineer",
+        urlImg: "/avatars/azhar.jpg",
+        class: "2023",
+        link: ["https://linkedin.com/in/",""]
+    },
+    {
+        name: "Afrizal Lutfi Eka Arnatha",
+        role: "Data Science",
+        urlImg: "/avatars/afrizal.jpg",
+        class: "2023",
+        link: ["https://linkedin.com/in/",""]
+    },
+]
