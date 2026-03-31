@@ -26,11 +26,6 @@ export default function InterestGroups(props: InterestGroupsProps) {
       id="interest-groups"
       aria-labelledby="divisions-heading"
       className="relative bg-white dark:bg-neutral-950 border-y border-gray-200 dark:border-neutral-800 overflow-hidden"
-      style={{
-        contain: "layout style paint",
-        contentVisibility: "auto",
-        containIntrinsicSize: "auto 800px",
-      }}
     >
       <BackgroundGlow />
       <div className="max-w-480 mx-auto w-full sm:border-x border-gray-200 dark:border-neutral-800">
@@ -93,7 +88,7 @@ function GroupRow({
     <article
       className={[
         "group grid grid-cols-1 lg:grid-cols-12 border-b border-gray-200 dark:border-neutral-800",
-        "hover:bg-gray-50 dark:hover:bg-neutral-900 transition-[opacity,transform,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+        "hover:bg-gray-50 dark:hover:bg-neutral-900 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
         "bg-white dark:bg-neutral-950",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
       ].join(" ")}
@@ -122,7 +117,7 @@ function GroupRow({
               key={detail}
               className={[
                 "text-sm text-gray-500 dark:text-neutral-400 flex items-center gap-2",
-                "transition-[opacity,transform] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)]",
+                "transition-all duration-400 ease-[cubic-bezier(0.22,1,0.36,1)]",
                 isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-2.5",
               ].join(" ")}
               style={{
@@ -143,10 +138,15 @@ function GroupRow({
         <span className="lg:hidden font-mono text-sm text-gray-400 dark:text-neutral-600">
           {(index + 1).toString().padStart(2, "0")}
         </span>
-        <BsArrowRight
-          className="w-6 h-6 text-gray-300 dark:text-neutral-600 group-hover:text-gray-900 dark:group-hover:text-apple-blue-400 transform group-hover:translate-x-2 transition-[color,transform] duration-300"
-          aria-hidden="true"
-        />
+
+        <a href={index === 0 ? "softdev" : index === 1 ? "cloud" : ""}>
+          <div className="flex items-center gap-2">
+            <BsArrowRight
+              className="w-6 h-6 text-gray-300 dark:text-neutral-600 group-hover:text-gray-900 dark:group-hover:text-apple-blue-400 transform group-hover:translate-x-2 transition-all duration-300"
+              aria-hidden="true"
+            />
+          </div>
+        </a>
       </div>
     </article>
   );

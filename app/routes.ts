@@ -7,5 +7,6 @@ export default [
     route("programs", "routes/programs.tsx"),
     route("about", "routes/about.tsx"),
     route("member", "routes/member.tsx"),
+    route("softdev", "routes/softdev.tsx"),
   ]),
 ] satisfies RouteConfig;
