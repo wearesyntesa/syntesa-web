@@ -102,7 +102,7 @@ export default function Members({ members }: MembersProps) {
   return (
     <section
       aria-labelledby="members-heading"
-      className=" h-calc(100vh - 4rem) relative py-12 bg-white dark:bg-neutral-950 border-t border-gray-200 dark:border-neutral-800 overflow-hidden"
+      className=" h-calc(100vh - 4rem) relative pt-12 bg-white dark:bg-neutral-950 border-t border-gray-200 dark:border-neutral-800 overflow-hidden"
     >
       <div className="max-w-480 mx-auto w-full sm:border-x border-gray-200 dark:border-neutral-800">
         <div className="grid grid-cols-1 lg:grid-cols-12 border-b border-gray-200 dark:border-neutral-800">
@@ -274,16 +274,17 @@ export default function Members({ members }: MembersProps) {
           </div>
 
           {totalPages > 1 && (
-            <div className="p-6 sm:p-8 border-t border-gray-200 dark:border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="p-6 sm:p-8 border-t border-gray-200 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-4">
               <button
                 type="button"
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                 disabled={boundedPage === 1}
-                className="px-4 py-2 text-xs font-mono uppercase tracking-wider border border-gray-200 dark:border-neutral-800 text-gray-600 dark:text-neutral-400 disabled:opacity-40 disabled:cursor-not-allowed hover:text-gray-900 dark:hover:text-neutral-100 transition-colors"
+                className="order-2 sm:order-1 flex-1 sm:flex-none px-4 py-2 text-xs font-mono uppercase tracking-wider border border-gray-200 dark:border-neutral-800 text-gray-600 dark:text-neutral-400 disabled:opacity-40 disabled:cursor-not-allowed hover:text-gray-900 dark:hover:text-neutral-100 transition-colors text-center"
               >
                 Previous
               </button>
-              <div className="flex items-center gap-2">
+
+              <div className="order-1 sm:order-2 flex items-center justify-center gap-2 w-full sm:w-auto">
                 {Array.from({ length: totalPages }, (_, index) => {
                   const page = index + 1;
                   const isActive = page === boundedPage;
@@ -304,26 +305,17 @@ export default function Members({ members }: MembersProps) {
                   );
                 })}
               </div>
+
               <button
                 type="button"
                 onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                 disabled={boundedPage === totalPages}
-                className="px-4 py-2 text-xs font-mono uppercase tracking-wider border border-gray-200 dark:border-neutral-800 text-gray-600 dark:text-neutral-400 disabled:opacity-40 disabled:cursor-not-allowed hover:text-gray-900 dark:hover:text-neutral-100 transition-colors"
+                className="order-3 flex-1 sm:flex-none px-4 py-2 text-xs font-mono uppercase tracking-wider border border-gray-200 dark:border-neutral-800 text-gray-600 dark:text-neutral-400 disabled:opacity-40 disabled:cursor-not-allowed hover:text-gray-900 dark:hover:text-neutral-100 transition-colors text-center"
               >
                 Next
               </button>
             </div>
           )}
-        </div>
-
-        <div className="p-6 sm:p-12 border-t border-gray-200 dark:border-neutral-800 bg-gray-50 dark:bg-neutral-900 bg-grid-lines overflow-hidden">
-          <p className="text-sm text-gray-500 dark:text-neutral-400 text-center">
-            {normalizedQuery.length > 0
-              ? `Filtered ${totalMembers} members in ${activeLabel}`
-              : activeTab === "all"
-                ? `Total ${safeMembers.length} active members across all divisions`
-                : `Total ${activeMembers.length} active members in ${activeLabel}`}
-          </p>
         </div>
       </div>
     </section>
