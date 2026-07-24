@@ -16,7 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@fontsource-variable/plus-jakarta-sans": "5.2.8",
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
     "@react-router/node": "7.17.0",
     "framer-motion": "12.42.2",
     "isbot": "5",
