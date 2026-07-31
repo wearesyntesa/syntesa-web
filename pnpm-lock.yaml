@@ -12,8 +12,8 @@ importers:
         specifier: 5.3.0
         version: 5.3.0
       '@react-router/node':
-        specifier: 7.17.0
-        version: 7.17.0(react-router@8.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
+        specifier: 8.3.0
+        version: 8.3.0(react-router@8.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
       framer-motion:
         specifier: 12.42.2
         version: 12.42.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -1080,9 +1080,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@mjackson/node-fetch-server@0.2.0':
-    resolution: {integrity: sha512-EMlH1e30yzmTpGLQjlFmaDAjyOeZhng1/XCd7DExR8PNAnG/G1tyruZxEoUe11ClnwGhGrtsdnyyUx1frSzjng==}
-
   '@napi-rs/wasm-runtime@1.1.6':
     resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
     peerDependencies:
@@ -1128,16 +1125,6 @@ packages:
       typescript:
         optional: true
       wrangler:
-        optional: true
-
-  '@react-router/node@7.17.0':
-    resolution: {integrity: sha512-RYR47qM9gJ8zV8Ntial5Rkgcst2YnwWXt0Ai34FezzkDK6AILpxpVatEzFEhNRwbSh6JO6iweY7XhfM4/K5dBA==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      react-router: 7.17.0
-      typescript: ^5.1.0 || ^6.0.0
-    peerDependenciesMeta:
-      typescript:
         optional: true
 
   '@react-router/node@8.3.0':
@@ -3107,8 +3094,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mjackson/node-fetch-server@0.2.0': {}
-
   '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
       '@emnapi/core': 1.11.1
@@ -3170,13 +3155,6 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
-
-  '@react-router/node@7.17.0(react-router@8.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)':
-    dependencies:
-      '@mjackson/node-fetch-server': 0.2.0
-      react-router: 8.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-    optionalDependencies:
-      typescript: 5.9.3
 
   '@react-router/node@8.3.0(react-router@8.3.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)':
     dependencies:
